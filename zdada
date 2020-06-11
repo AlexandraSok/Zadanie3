@@ -1,0 +1,9 @@
+import java.util.Scanner;
+
+public class ItemsMenu {
+
+	final public static ItemsMenu instance = new ItemsMenu(
+			new GoodsRegisterService(),
+			new GoodsVerificationService(),
+			new GoodsReleaseService()
+	);
